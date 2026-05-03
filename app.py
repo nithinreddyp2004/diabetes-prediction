@@ -1,5 +1,8 @@
 import joblib
-import streamlit as st 
+import streamlit as st
+import subprocess
+subprocess.check_call(["pip", "install", "joblib"])
+
 
 model=joblib.load('model_logistic.pkl')
 
